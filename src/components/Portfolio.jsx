@@ -23,12 +23,17 @@ const Navbar = () => {
 
 const Hero = () => {
   return (
-    <section className=" h-screen flex flex-col justify-center items-center">
+    <section className=" h-screen flex flex-col justify-center items-center mt-9">
       <div className="grid grid-rows-2 lg:grid-rows-1 lg:grid-cols-9 lg:h-full w-full relative">
         <div className="col-span-4  lg:col-start-2 flex flex-col gap-7 justify-center items-start z-20 relative">
-          <h1 className="text-4xl font-bold">Crafting web experiences.</h1>
-          <p className="text-md font-medium">
-            Front-end developer and lighting designer <br></br> based in
+          <h1 className="text-4xl font-bold text-nowrap">
+            Crafting web experiences.
+          </h1>
+          <p className="md:text-lg font-medium" style={{ color: "#A8A8A8" }}>
+            <span style={{ color: "#000000" }} className="font-medium">
+              Fredi Karu
+            </span>{" "}
+            - Front-end developer and lighting designer <br></br> based in
             Helsinki, Finland.
           </p>
           <button className="bg-black text-white px-6 py-2 rounded-full">
@@ -36,7 +41,7 @@ const Hero = () => {
           </button>
         </div>
         <div
-          className="bg-right col-span-9 lg:col-span-3 absolute lg:relative lg:z-auto inset-0 opacity-80 lg:opacity-100 top-8 md:top-0"
+          className="bg-right col-span-9 lg:col-span-3 absolute lg:relative lg:z-auto inset-0 top-36 md:top-0 min-h-96"
           style={{
             backgroundImage: `url(${hero_img})`,
             backgroundSize: "contain",
