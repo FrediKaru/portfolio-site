@@ -7,13 +7,13 @@ const Navbar = () => {
   return (
     <nav className="">
       <div className="flex items-center justify-between">
-        <a href="#about" className="hover:text-gray-300">
+        <a href="#home" className="hover:text-gray-300">
           Fredi Karu
         </a>
         <a href="#projects" className="hover:text-gray-300">
           fredikaru@hotmail.ee
         </a>
-        <a href="#contact" className="hover:text-gray-300">
+        <a href="#about" className="hover:text-gray-300">
           About
         </a>
       </div>
@@ -66,13 +66,13 @@ const Project = ({ title, description, link, livelink, githublink, image }) => {
       ></div>
       <div className="relative inset-0 p-4 min-h-64 flex flex-col">
         <div className="mb-auto flex justify-end">
-          {/* <p className="bg-gray-300 text-xs font-normal uppercase px-3 py-1 rounded-full">
+          <p className="bg-gray-300 text-xs font-normal uppercase px-3 py-1 rounded-full">
             Personal project
-          </p> */}
+          </p>
         </div>
         <h2 className="text-2xl font-bold mb-2 text-white">{title}</h2>
         <div className="flex justify-between">
-          <a href={link} className="text-blue-300 hover:text-blue-500">
+          <a href={link} className="text-yellow-300">
             View Project
           </a>
           <div className="flex gap-2 text-white">
