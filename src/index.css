@@ -10,3 +10,33 @@
   font-weight: 300;
   font-style: normal;
 }
+
+h2 {
+  font-weight: bold;
+  font-size: 25pt;
+  padding: 30px 0;
+}
+.skill-list > li::before,
+.task-list > li::before,
+.education-topics > li::before {
+  content: "- ";
+  padding-right: 10px;
+}
+.work-list > li > h3,
+.education-list > li > h3 {
+  font-weight: bold;
+  font-size: 13pt;
+}
+.work-list > li,
+.education-list > li {
+  padding-bottom: 25px;
+}
+.work-list > li > ul,
+.education-list > li > ul {
+  padding-left: 25px;
+  padding-top: 15px;
+}
+.work-list > li :not(:first-child),
+.education-list > li :not(:first-child) {
+  color: rgb(98, 98, 98);
+}

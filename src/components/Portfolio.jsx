@@ -6,7 +6,7 @@ import underline from "../assets/img/underline.svg";
 
 const Hero = () => {
   return (
-    <section className=" h-screen flex flex-col justify-center items-center mt-9">
+    <section className="h-screen flex flex-col justify-center items-center mt-9">
       <div className="grid grid-rows-2 lg:grid-rows-1 lg:grid-cols-9 lg:h-full w-full relative">
         <div className="col-span-4  lg:col-start-2 flex flex-col gap-7 justify-center items-start z-20 relative">
           <div className="relative grid grid-cols-3 grid-rows-1">
@@ -89,34 +89,32 @@ const Project = ({ title, description, link, livelink, githublink, image }) => {
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-12">
-      <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <Project
-            title="Inventory management system"
-            description="A web app built with React and Tailwind CSS."
-            link="#"
-            livelink="https://inventory-txje.vercel.app/"
-            githublink="#"
-            image={inventory_bg}
-          />
-          <Project
-            title="Tasks manager tool"
-            description="An eCommerce site using Next.js and Tailwind CSS."
-            link="#"
-            livelink="#"
-            githublink="#"
-            image={taskmanager_bg}
-          />
-          <Project
-            title="Recipe search app"
-            description="A portfolio site with custom animations and designs."
-            link="#"
-            livelink="#"
-            githublink="#"
-            image={sneaker_bg}
-          />
-        </div>
+    <section id="projects">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <Project
+          title="Inventory management system"
+          description="A web app built with React and Tailwind CSS."
+          link="#"
+          livelink="https://inventory-txje.vercel.app/"
+          githublink="#"
+          image={inventory_bg}
+        />
+        <Project
+          title="Tasks manager tool"
+          description="An eCommerce site using Next.js and Tailwind CSS."
+          link="#"
+          livelink="#"
+          githublink="#"
+          image={taskmanager_bg}
+        />
+        <Project
+          title="Recipe search app"
+          description="A portfolio site with custom animations and designs."
+          link="#"
+          livelink="#"
+          githublink="#"
+          image={sneaker_bg}
+        />
       </div>
     </section>
   );
@@ -128,11 +126,11 @@ const Contact = () => {
 
 const Portfolio = () => {
   return (
-    <>
+    <div>
       <Hero />
       <Projects />
       <Contact />
-    </>
+    </div>
   );
 };
 

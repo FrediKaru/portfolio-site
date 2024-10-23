@@ -5,7 +5,7 @@ import { Outlet } from "react-router-dom";
 
 function App() {
   return (
-    <div className="px-10 py-3 min-h-screen flex flex-col">
+    <div className="px-10 py-5 min-h-screen flex flex-col gap-4">
       <Navbar />
       <Outlet />
       <Footer />
