@@ -5,9 +5,20 @@ const Navbar = () => {
         <a href="/" className="hover:text-gray-300">
           Fredi Karu
         </a>
-        <a href="#projects" className="hover:text-gray-300">
-          fredikaru@hotmail.ee
-        </a>
+        <div className="flex gap-3">
+          <a href="mailto:fredikaru@gmail.com" className="hover:text-gray-300">
+            fredikaru@gmail.com
+          </a>
+          <p>|</p>
+          <a
+            href="https://www.linkedin.com/in/fredikaru197"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-blue-600"
+          >
+            Linkedin
+          </a>
+        </div>
         <a href="about" className="hover:text-gray-300">
           About
         </a>
