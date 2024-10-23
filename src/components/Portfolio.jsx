@@ -33,9 +33,20 @@ const Hero = () => {
             - Front-end developer and lighting designer <br></br> based in
             Tallinn, Estonia.
           </p>
-          <button className="bg-black text-white px-6 py-2 rounded-full">
-            See work
-          </button>
+          <div className="flex gap-4">
+            <a
+              href="#projects"
+              className="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition"
+            >
+              View My Work
+            </a>
+            <a
+              href="/about"
+              className="bg-amber-200 text-black px-6 py-3 rounded-full hover:bg-amber-300 transition fade"
+            >
+              About Me
+            </a>
+          </div>
         </div>
         <div
           className="bg-right col-span-9 lg:col-span-3 absolute lg:relative lg:z-auto inset-0 top-36 md:top-0 min-h-96"
