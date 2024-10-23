@@ -2,33 +2,30 @@ import inventory_bg from "../assets/img/inventory_preview.png";
 import taskmanager_bg from "../assets/img/task_manager.png";
 import sneaker_bg from "../assets/img/sneakerstore.png";
 import hero_img from "../assets/img/hero.png";
-
-const Navbar = () => {
-  return (
-    <nav className="">
-      <div className="flex items-center justify-between">
-        <a href="#home" className="hover:text-gray-300">
-          Fredi Karu
-        </a>
-        <a href="#projects" className="hover:text-gray-300">
-          fredikaru@hotmail.ee
-        </a>
-        <a href="#about" className="hover:text-gray-300">
-          About
-        </a>
-      </div>
-    </nav>
-  );
-};
+import underline from "../assets/img/underline.svg";
 
 const Hero = () => {
   return (
     <section className=" h-screen flex flex-col justify-center items-center mt-9">
       <div className="grid grid-rows-2 lg:grid-rows-1 lg:grid-cols-9 lg:h-full w-full relative">
         <div className="col-span-4  lg:col-start-2 flex flex-col gap-7 justify-center items-start z-20 relative">
-          <h1 className="text-4xl font-bold text-nowrap">
-            Crafting web experiences.
-          </h1>
+          <div className="relative grid grid-cols-3 grid-rows-1">
+            <h1 className="text-4xl font-bold text-nowrap">
+              Crafting{" "}
+              <span
+                className="font-bold"
+                style={{
+                  backgroundImage: `url(${underline})`,
+                  backgroundSize: "contain",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center bottom",
+                  paddingBottom: "16px",
+                }}
+              >
+                web experiences.
+              </span>
+            </h1>
+          </div>
           <p className="md:text-lg font-medium" style={{ color: "#A8A8A8" }}>
             <span style={{ color: "#000000" }} className="font-medium">
               Fredi Karu
@@ -72,7 +69,7 @@ const Project = ({ title, description, link, livelink, githublink, image }) => {
         </div>
         <h2 className="text-2xl font-bold mb-2 text-white">{title}</h2>
         <div className="flex justify-between">
-          <a href={link} className="text-yellow-300">
+          <a href={link} className="text-amber-300">
             View Project
           </a>
           <div className="flex gap-2 text-white">
@@ -140,7 +137,6 @@ const Footer = () => {
 const Portfolio = () => {
   return (
     <>
-      <Navbar />
       <Hero />
       <Projects />
       <Contact />
