@@ -126,21 +126,12 @@ const Contact = () => {
   return;
 };
 
-const Footer = () => {
-  return (
-    <footer className=" p-4 text-center">
-      <p>&copy; {new Date().getFullYear()} Fredi Karu. All rights reserved.</p>
-    </footer>
-  );
-};
-
 const Portfolio = () => {
   return (
     <>
       <Hero />
       <Projects />
       <Contact />
-      <Footer />
     </>
   );
 };
