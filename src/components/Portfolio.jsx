@@ -31,7 +31,7 @@ const Hero = () => {
               Fredi Karu
             </span>{" "}
             - Front-end developer and lighting designer <br></br> based in
-            Helsinki, Finland.
+            Tallinn, Estonia.
           </p>
           <button className="bg-black text-white px-6 py-2 rounded-full">
             See work
