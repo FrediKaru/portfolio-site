@@ -3,7 +3,7 @@ import aboutImg from "../assets/img/about_image.jpg";
 
 function About() {
   return (
-    <div className="lg:px-64 flex gap-7 pt-20">
+    <div className="lg:px-64 flex gap-7 pt-20 about-page">
       <div className="flex flex-col gap-4 lg:basis-2/3">
         <section className="about-section">
           <h2 className="section-title">About Me</h2>
